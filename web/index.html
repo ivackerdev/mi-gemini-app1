@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ivacker.Dev > Cocinando con Gemini IA</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+  <main>
+    <h1>Cocinando con Gemini IA</h1>
+    <form>
+      <div class="image-picker">
+        <label class="image-choice">
+          <input type="radio" checked name="chosen-image" value="/shawarma.jpeg">
+          <img src="/shawarma.jpeg">
+        </label>
+        <label class="image-choice">
+          <input type="radio" name="chosen-image" value="/baked_goods_2.jpg">
+          <img src="/baked_goods_2.jpg">
+        </label>
+        <label class="image-choice">
+          <input type="radio" name="chosen-image" value="/baked_goods_3.jpg">
+          <img src="/baked_goods_3.jpg">
+        </label>
+      </div>
+      <div class="prompt-box">
+        <label>
+          <input name="prompt" placeholder="Ingrese las instrucciones" type="text"
+            value="Dame los ingredientes y las instrucciones para cocinar lo de la imagen.">
+        </label>
+        <button type="submit">Go</button>
+      </div>
+    </form>
+    <p class="output">(El resultado aparecera aqui)</p>
+  </main>
+
+  <script src="https://unpkg.com/markdown-it@8.4.2/dist/markdown-it.min.js"></script>
+  <script src="https://unpkg.com/base64-js@1.3.0/base64js.min.js"></script>
+  <script type="module" src="/main.js"></script>
+</body>
+
+</html>
